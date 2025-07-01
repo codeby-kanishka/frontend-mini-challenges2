@@ -7,6 +7,10 @@
     height : 5px;
     text-align: center;
  }
+ .counter-form-per{
+    font-size: 1.2rem;
+    font-weight: 550;
+ }
 #counter-form{
     display:flex; flex-flow:column nowrap;
     align-items:center;
