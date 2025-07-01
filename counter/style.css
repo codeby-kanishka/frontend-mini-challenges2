@@ -1,43 +1,111 @@
 @charset "utf-8";
-body{
-    background-color: ;
+
+:root {
+  --bg: #f2f2f2;
+  --card: #ffffff;
+  --text: #222;
+  --accent: #007bff;
 }
-#counter-result{
-    margin-bottom:1rem;
-    font-size:5rem; font-weight:bold;}
- .counter-form-per input{
-    margin-left : 5px;
-    height : 5px;
-    text-align: center;
- }
- .counter-form-btns{
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: row;
-    gap : 1rem;
- }
- .counter-form-btns button{
-    border-radius: 65%;
- }
 
- .counter-form-per{
-    font-size: 1.2rem;
-    font-weight: 550;
- }
-#counter-form{
-    display:flex; 
-    flex-flow:column nowrap;
-    align-items:center;
-    gap:1rem;
+body.dark {
+  --bg: #1e1e1e;
+  --card: #2c2c2c;
+  --text: #f2f2f2;
+  --accent: #66b2ff;
 }
-.ipt-per{width:4em;}
 
-.btn-reset{
-    margin-top:1.2rem;
-    width:50%;
-    font-weight: bold;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    button:hover {
-  background-color: #444;
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.container {
+  position: relative;
+}
+
+#theme-toggle {
+  position: absolute;
+  top: -50px;
+  right: -10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 300px;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.counter {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: transform 0.2s;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: var(--accent);
   color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #005bb5;
+}
+
+.step-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ipt-per {
+  width: 60px;
+  padding: 0.4rem;
+  text-align: center;
+}
+
+.reset {
+  background: #dc3545;
+}
+
+.reset:hover {
+  background: #a71d2a;
 }
