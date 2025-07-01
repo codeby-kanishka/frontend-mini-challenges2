@@ -7,6 +7,12 @@
     height : 5px;
     text-align: center;
  }
+ .counter-form-btns{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    gap : 1rem;
+ }
  .counter-form-per{
     font-size: 1.2rem;
     font-weight: 550;
@@ -19,5 +25,6 @@
 .ipt-per{width:4em;}
 
 .btn-reset{
-    margin-top:2rem;
-    width:100%;}
+    margin-top:1.2rem;
+    width:50%;
+    font-weight: bold;}
