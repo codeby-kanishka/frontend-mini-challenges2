@@ -2,6 +2,11 @@
 #counter-result{
     margin-bottom:1rem;
     font-size:5rem; font-weight:bold;}
+ .counter-form-per input{
+    margin-left : 5px;
+    height : 5px;
+    text-align: center;
+ }
 #counter-form{
     display:flex; flex-flow:column nowrap;
     align-items:center;
